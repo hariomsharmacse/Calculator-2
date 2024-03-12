@@ -48,3 +48,9 @@ back.addEventListener(
 numbers.forEach((e) =>
   e.addEventListener("click", () => (inputValue.value += e.textContent))
 );
+
+inputValue.addEventListener('keypress', () => {
+  if (event.key === "Enter" && !(allOperators.includes(inputValue.value.charAt(inputValue.value.length - 1)))) {
+    inputValue.value = eval(inputValue.value);
+  }
+})
