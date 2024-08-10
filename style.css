@@ -95,3 +95,11 @@ input {
   padding-bottom: 20px;
   background-color: #40532ace;
 }
+
+
+@media (max-width:450px) {
+  body{
+    height: 96vh;
+  }
+  
+}
